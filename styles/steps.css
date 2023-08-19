@@ -1,0 +1,96 @@
+.steps-titles{
+    text-align: center;
+}
+
+.steps-titles h2{
+    font-size: 40px;
+    color: var(--main-green);
+}
+
+.circle1{
+    width: 400px;
+    height:400px;
+    border-radius: 50%;
+    background-color: #F0F7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle2{
+    width: 350px;
+    height:350px;
+    border-radius: 50%;
+    background-color: #D9EBCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle3{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    background-color: var(--main-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.steps-area{
+    display: flex;
+    gap: 220px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.stepNumber{
+    background: #F2F1F1;
+   display: inline-flex;
+    padding: 2px 25px;
+    border-radius:20px
+}
+
+.firstStep{
+    background: var(--main-green);
+}
+
+.each-step{
+    position:relative;
+}
+
+
+
+.stepNumber p{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--main-green);
+     
+}
+
+.step-content h4{
+    color: var(--main-grey)
+}
+.step-content p{
+    color: var(--main-grey)
+}
+
+
+
+
+@media (max-width:1150px){
+    .steps-area {
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:400px){
+    .step-link2{
+        width:230px;
+        height:220px
+    }
+    .step-link1{
+        width:40px;
+        left: -10px;
+    }
+}

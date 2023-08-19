@@ -1,0 +1,217 @@
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+  }
+  
+  .partOne {
+    /* flex-grow: 1; */
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+  
+  .partTwo {
+    /* flex-basis: 60%;  */
+    padding: 20px;
+    padding-top: 60px;
+    padding-left: 80px;
+    /* width: 70%; */
+    
+  }
+
+  .circle{
+    width: 450px;
+    height: 450px;
+    background-color: var(--main-green);
+    background-image: url("/Mask group.png");
+    border-radius :50% ;
+    background-size: cover; 
+  background-position: center;
+    position: relative;
+  }
+
+  .desktopImg{
+    position: absolute;
+    top: 80px;
+    right:0
+
+  }
+  
+
+.partOne h1{
+    font-size: 55px;
+}
+
+.partOne p{
+    font-size: 21px;
+    color:var(--main-grey);
+    font-weight:300
+}
+
+.partOne button{
+    margin-top: 15px
+}
+
+h1 span:nth-child(1){
+    color: var(--main-green);
+}
+h1 span:nth-child(3){
+    color: #B4A572;
+}
+h1 span:nth-child(2){
+    color: var(--main-red);
+}
+  
+
+  .appDownload{
+    margin-top:80px
+  }
+
+  .store-container{
+    display: flex;
+    gap: 30px;
+  }
+  
+  .store{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    padding:8px 18px;
+    background-color:#F2F1F1;
+    border-radius: 10px;
+    box-shadow: -11px 0px 19px 0px rgba(23, 23, 23, 0.30), 0px 13px 20px 0px rgba(23, 23, 23, 0.20);
+    top: 80px;
+  }
+  .googlePlay-content{
+    line-height: 5px;
+  }
+  .appStore-content{
+    line-height: 5px;
+  }
+  .downloadIcon{
+    font-size: 20px;
+  }
+  .downloadIcon-container{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    background:#ffffff;
+  }
+
+  .steps-container{
+    margin-top: 60px;
+  }
+  .salary-container{
+    margin-top: 170px;
+  }
+  .demo-section{
+    margin-top: 120px;
+  }
+
+  .googlePlay-content p{
+    color:var(--main-grey)
+  }
+  .appStore-content p{
+    color:var(--main-grey)
+  }
+
+  .googlePlay-content p:nth-child(1){
+    font-size: 15px;
+  }
+  .appStore-content p:nth-child(1){
+    font-size: 15px;
+  }
+
+
+
+  @media(max-width:1100px){
+    .flex-container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .partOne{
+      flex-basis: 50%;
+    }
+    .partTwo{
+      padding-left: 10px;
+    }
+    /* .desktopImg{
+      width: 200px;
+      height: 200px;
+    } */
+  }
+
+  @media(max-width:800px){
+    .partOne h1{
+      font-size: 30px;
+    }
+    .partOne p{
+      font-size: 15px;
+    }
+    .partTwo{
+      padding-top: 50px;
+    }
+  }
+  @media(max-width:600px){
+    .circle{
+      width: 280px;
+      height: 280px;
+    }
+    .desktopImg{
+      width: 250px;
+      height:150px;
+      top:60px
+    }
+    .desktopImg-comment{
+      display: none;
+    }
+    .partTwo{
+      padding-left: 0px;
+    }
+    .googlePlay-content{
+      line-height: 12px;
+    }
+    .appStore-content{
+      line-height: 12px;
+    }
+    .store-container{
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width:400px){
+    .partOne p{
+      font-size: 12px;
+    }
+    .store-container{
+      gap: 10px;
+    }
+    .downloadIcon{
+      font-size: 13px;
+    }
+    .downloadIcon-container{
+      width: 25px;
+      height: 25px;
+    }
+    .store{
+      padding: 5px 14px;
+    }
+    .googlePlay-content>p{
+      font-size: 12px;
+    }
+    .appStore-content>p{
+      font-size: 12px;
+    }
+  }

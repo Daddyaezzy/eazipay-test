@@ -1,0 +1,123 @@
+.demo-container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.demo-partOne{
+    width: 25%;
+    margin-top: 65px;
+}
+.demo-partTwo{
+    width:35%;
+    
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    background-color: #F2F1F1;
+    padding: 10px 3px;
+    box-shadow: -11px 0px 19px 0px rgba(23, 23, 23, 0.30), 0px 13px 20px 0px rgba(23, 23, 23, 0.20);
+    border-radius: 25px;
+}
+
+.demo-writing h2{
+    font-size: 40px;
+    color:var(--main-green);
+}
+
+.demo-writing p{
+    line-height: 20px;
+    color:var(--main-grey)
+}
+.demo-partTwo h4{
+    font-size:23px;
+    margin-bottom: 10px;
+}
+.demo-partTwo p{
+    margin-top: 0;
+    font-weight:100
+}
+.switch-btn .btn{
+    color:var(--main-white);
+}
+
+.switch-btn{
+    display:flex;
+    border:1px solid #9a9a9a;
+    border-radius:30px;
+    padding: 2px;
+}
+form input{
+    margin-top:20px;
+    padding: 12px;
+    width: 80%;
+    border-radius:30px;
+    border:1px solid #9a9a9a
+
+}
+
+.submit-btn{
+    margin: 20px;
+}
+
+.submit-btn button{
+    color:var(--main-white)
+}
+
+.form-btn{
+    display: block;
+  background-color: var(--main-green);
+  border: 2px solid var(--main-green);
+  border-radius: 30px;
+  padding: 10px 50px;
+  color:white;
+  
+}
+.form-btn2{
+    display: block;
+  background-color: var(--main-white);
+  border: 2px solid var(--main-green);
+  border-radius: 30px;
+  padding: 10px 50px;
+}
+
+
+@media (max-width:1100px) {
+    .demo-container{
+        flex-direction: column;
+        gap:50px;
+    }
+    .demo-partOne{
+        padding-top: 40px;
+        width: 60%;
+    }
+    .demo-partTwo{
+        margin-top: 0;
+        width: 60%;
+    }
+    
+}
+
+@media (max-width:750px){
+    .demo-partTwo{
+        width: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    
+    .form-btn,.form-btn2{
+        padding:10px 10px
+    }
+    .demo-partTwo h4{
+        font-size: 19px;
+    }
+    .demo-partTwo p{
+        font-size: 12px;
+    }
+    
+}

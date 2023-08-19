@@ -1,0 +1,117 @@
+.salary-container{
+    background-color: var(--secondary-red);
+    background-image: url("/Mask group.png"); 
+    background-size: cover; 
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+    position:relative;
+    padding:60px;
+}
+
+.salary-partOne h2{
+    font-size:35px;
+    padding:15px 0;
+
+}
+
+/* .salary-partOne{
+    padding-top:40px ;
+} */
+
+.payment{
+    font-weight:700;
+    color:var(--main-green);
+    
+    
+}
+
+.salary-partOne h2 >span{
+    color:var(--main-red)
+}
+
+.salary-comment p{
+    font-size:12px
+}
+
+.salary-partTwo{
+    position: relative;
+    /* overflow-y: hidden; */
+}
+.salary-comment{
+    text-align:center;
+    padding:7px ;
+    background-color:rgb(244, 244, 244);
+    box-shadow: -11px 0px 19px 0px rgba(23, 23, 23, 0.30), 0px 13px 20px 0px rgba(23, 23, 23, 0.20);
+    top: 80px;
+    border-radius:20px;
+    position: absolute;
+    left: -90px;
+    top: 80px;
+}
+
+.salary-photo{
+    width: 400px;
+    height: 420px;
+    background-color: var(--main-red);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    /* align-items: center; */
+    margin-top: 60px;
+    
+    
+}
+.salary-photo::after{
+    content: " ";
+    width: 400px;
+    height: 110px;
+    border-radius: 
+    70% 30% 10% 10% / 58% 27% 0% 0% ;
+    background-color: var(--secondary-red);
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+@media(max-width:1100px){
+    .salary-container{
+        /* margin-top: 100px; */
+        flex-direction: column;
+    }
+    .salary-partOne{
+        margin-top: 50px;
+    }
+    .salary-partTwo{
+        margin-top: -150px;
+    }
+}
+
+@media(max-width:600px){
+    .salary-img{
+        width: 150px;
+        height: 150px;
+    }
+    .salary-photo{
+        width: 200px;
+        height: 220px;
+    }
+    .salary-photo::after{
+        width: 200px;
+    }
+    .salary-comment p{
+        font-size: 7px;
+
+    }
+    .salary-comment{
+        padding: 2px;
+        left: -30px;
+    }
+    .comment-img{
+        width: 20px;
+        height:20px
+    }
+}
